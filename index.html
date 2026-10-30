@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rambod Ghandiparsi</title>
+  <meta name="description" content="Rambod Ghandiparsi — PhD student in Computer Science at UT San Antonio. Software Engineering, Requirements Engineering, and AI-assisted software engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1e1d1b;
+      --surface: #2a2927;
+      --text: #e8e6e3;
+      --muted: #a09d98;
+      --faint: #6f6c67;
+      --border: #3a3936;
+      --accent: #d9b77e;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    a { color: var(--text); text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 3px; }
+    a:hover { text-decoration-color: var(--accent); color: var(--accent); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 32px; }
+
+    header { display: flex; align-items: center; gap: 36px; margin-bottom: 28px; }
+    .avatar {
+      width: 180px; height: 180px; flex: 0 0 auto;
+      border-radius: 50%; object-fit: cover; object-position: center 30%;
+      background: var(--surface);
+    }
+    h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); line-height: 1.05; margin: 0; font-weight: 600; letter-spacing: -0.02em; }
+    .affil { margin-top: 14px; font-size: 0.82rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 48px; padding: 0; list-style: none; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 16px; border: 1px solid var(--border); border-radius: 999px;
+      text-decoration: none; font-size: 0.92rem; font-weight: 500;
+    }
+    .links a:hover { border-color: var(--accent); }
+    .links svg { width: 16px; height: 16px; fill: currentColor; }
+
+    section { margin-bottom: 44px; }
+    h2 { font-size: 1.35rem; font-weight: 600; color: var(--muted); margin: 0 0 14px; }
+    h3 { font-size: 0.95rem; font-weight: 600; color: var(--muted); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+    p { margin: 0 0 14px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+    .tags li { background: var(--surface); padding: 4px 12px; border-radius: 6px; font-size: 0.88rem; }
+
+    .entries { list-style: none; padding: 0; margin: 0; }
+    .entries li { padding: 12px 0; border-top: 1px solid var(--border); }
+    .entries li:first-child { border-top: 0; padding-top: 0; }
+    .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .title { font-weight: 500; }
+    .date { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+    .sub { color: var(--muted); font-size: 0.93rem; }
+
+    .pubs { padding-left: 1.4em; margin: 0; }
+    .pubs li { margin-bottom: 14px; }
+    .pubs .venue { color: var(--muted); font-size: 0.93rem; }
+    .me { font-weight: 600; }
+
+    footer {
+      border-top: 1px solid var(--border); margin-top: 24px; padding-top: 20px;
+      color: var(--faint); font-size: 0.85rem; text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 36px 16px 24px; }
+      header { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .avatar { width: 128px; height: 128px; }
+      .affil { font-size: 0.72rem; letter-spacing: 0.16em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="assets/profile.webp" alt="Portrait of Rambod Ghandiparsi">
+      <div>
+        <h1>Rambod<br>Ghandiparsi</h1>
+        <div class="affil">University of Texas at San Antonio</div>
+      </div>
+    </header>
+
+    <ul class="links">
+      <li><a href="https://scholar.google.com/citations?user=MUSgLyoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg>
+        Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/rambod-ghandiparsi/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn</a></li>
+      <li><a href="https://github.com/rambodparsi" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        GitHub</a></li>
+      <li><a href="mailto:rambod.ghandiparsi@utsa.edu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm10 7.2L2.6 6h18.8L12 11.2zM2 7.6V18h20V7.6l-10 5.6-10-5.6z"/></svg>
+        Email</a></li>
+      <li><a href="assets/Rambod_Ghandiparsi_CV.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+        CV (PDF)</a></li>
+    </ul>
+
+    <section>
+      <h2>Bio</h2>
+      <p>I’m a PhD student in Computer Science at UT San Antonio, advised by Dr. Mitra Bokaei Hosseini in the Data-Driven Software Engineering Lab. My research sits at the intersection of Software Engineering, Requirements Engineering, software evolution, and AI-assisted software engineering.</p>
+      <p>I use large language models, natural language processing, software repository mining, testing, and empirical methods to recover stakeholder intent, improve requirements quality, evaluate whether software changes satisfy goals, and validate human- and AI-generated software. My research direction focuses on evidence-grounded software assurance, reliable software evolution, and trustworthy AI-assisted software development.</p>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul class="tags">
+        <li>Software Engineering</li>
+        <li>Requirements Engineering</li>
+        <li>AI-Assisted Software Engineering</li>
+        <li>Large Language Models</li>
+        <li>Software Evolution &amp; Maintenance</li>
+        <li>Software Traceability</li>
+        <li>Software Change Assurance</li>
+        <li>Testing &amp; Regression Analysis</li>
+        <li>Empirical Software Engineering</li>
+        <li>Human-Centered Software Engineering</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="entries">
+        <li><div class="row"><span class="title">Ph.D., Computer Science — UT San Antonio</span><span class="date">Jan 2024 – Expected Dec 2028</span></div>
+          <div class="sub">Requirements Engineering, AI-Assisted Software Engineering, and Software Evolution · Advisor: Dr. Mitra Bokaei Hosseini</div></li>
+        <li><div class="row"><span class="title">M.S., Data Analytics — UT San Antonio</span><span class="date">Aug 2022 – Dec 2023</span></div></li>
+        <li><div class="row"><span class="title">MBA — K. N. Toosi University of Technology</span><span class="date">Sep 2015 – Aug 2017</span></div></li>
+        <li><div class="row"><span class="title">B.S., Electrical Engineering — Tafresh University</span><span class="date">Sep 2008 – Jun 2013</span></div></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <h3>Conference Papers</h3>
+      <ol class="pubs">
+        <li>Pragyan K C, <span class="me">Rambod Ghandiparsi</span>, Thomas Herron, John Heaps, and Mitra Bokaei Hosseini.
+          “<a href="https://doi.org/10.1109/RE63999.2025.00020" target="_blank" rel="noopener">Demystifying Feature Requests: Leveraging LLMs to Refine Feature Requests in Open-Source Software</a>.”
+          <span class="venue">IEEE International Requirements Engineering Conference (RE), 2025, pp. 104–116.</span></li>
+      </ol>
+      <h3>Workshop Papers</h3>
+      <ol class="pubs" start="2">
+        <li><span class="me">Rambod Ghandiparsi</span>, Oluwaseyi Lawal, Pragyan K C, and Mitra Bokaei Hosseini.
+          “<a href="https://doi.org/10.1109/REW72749.2026.00030" target="_blank" rel="noopener">Regression Bugs in Post-Release GitHub Issue Reports: A Pilot Study</a>.”
+          <span class="venue">CrowdRE at IEEE Requirements Engineering Workshops (REW), 2026, pp. 148–154.</span></li>
+        <li>Pragyan K C, <span class="me">Rambod Ghandiparsi</span>, Thomas Herron, John Heaps, and Mitra Bokaei Hosseini.
+          “<a href="https://doi.org/10.1109/REW66121.2025.00020" target="_blank" rel="noopener">Towards Better Requirements from the Crowd: Developer Engagement with Feature Requests in Open Source Software</a>.”
+          <span class="venue">CrowdRE at IEEE REW, 2025, pp. 123–130.</span></li>
+        <li>Ryan Pavlich, Nima Ebadi, Richard Tarbell, Billy Linares, Adrian Tan, Rachael Humphreys, Jayanta Kumar Das, <span class="me">Rambod Ghandiparsi</span>, et al.
+          “<a href="https://doi.org/10.18653/v1/2025.trustnlp-main.1" target="_blank" rel="noopener">Beyond Text-to-SQL for IoT Defense: A Comprehensive Framework for Querying and Classifying IoT Threats</a>.”
+          <span class="venue">Workshop on Trustworthy NLP (TrustNLP), ACL, 2025, pp. 1–12.</span></li>
+        <li>Pragyan K C, <span class="me">Rambod Ghandiparsi</span>, Rocky Slavin, Sepideh Ghanavati, Travis D. Breaux, and Mitra Bokaei Hosseini.
+          “Toward Regulatory Compliance: A Few-Shot Learning Approach to Extract Processing Activities.”
+          <span class="venue">ESPRE at IEEE REW, 2024, pp. 241–250.</span></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Research Artifacts</h2>
+      <ul class="entries">
+        <li><span class="title"><a href="https://zenodo.org/records/15000588" target="_blank" rel="noopener">IoT-SQL Dataset</a></span>
+          <div class="sub">A benchmark for Text-to-SQL and IoT threat classification — 10,985 text-SQL pairs and 239,398 network-traffic records.</div></li>
+        <li><span class="title"><a href="https://github.com/rambodparsi/RegressionBugClassificationCrowd" target="_blank" rel="noopener">RegressionBugClassificationCrowd</a></span>
+          <div class="sub">Replication package for the CrowdRE 2026 regression-bug study: data, classification guidelines, figures, and results.</div></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul class="entries">
+        <li><div class="row"><span class="title">Doctoral Researcher — Data-Driven Software Engineering Lab, UTSA</span><span class="date">Jan 2024 – Present</span></div></li>
+        <li><div class="row"><span class="title">Graduate Teaching Assistant — Department of Computer Science, UTSA</span><span class="date">Sep 2024 – Present</span></div>
+          <div class="sub">Cybersecurity, Systems Programming, Web Technologies, Secure Software Development, Software Engineering, Cryptography, Data Mining, Machine Learning</div></li>
+        <li><div class="row"><span class="title">Graduate Research Assistant — Data-Driven Software Engineering Lab, UTSA</span><span class="date">Oct 2023 – Aug 2024</span></div></li>
+        <li><div class="row"><span class="title">Graduate Research Assistant — Carlos Alvarez College of Business, UTSA</span><span class="date">Mar 2023 – Sep 2023</span></div></li>
+        <li><div class="row"><span class="title">Graduate Research Assistant — Human-Centered NLP Lab, UTSA</span><span class="date">Jan 2023 – May 2023</span></div></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards &amp; Service</h2>
+      <ul class="entries">
+        <li><div class="row"><span class="title">3rd Place, Graduate Research Poster Competition — Los Datos Conference, UTSA</span><span class="date">Oct 2024</span></div></li>
+        <li><div class="row"><span class="title">Merit-Based Scholarships — Carlos Alvarez College of Business, UTSA</span><span class="date">Jun 2022</span></div></li>
+        <li><div class="row"><span class="title">Leonard and Shirley Sterling Endowed Scholarship — UTSA</span><span class="date">Feb 2022</span></div></li>
+        <li><div class="row"><span class="title">Public Relations Officer — CS Graduate Student Association (CSGRAD), UTSA</span><span class="date">Aug 2025 – Present</span></div></li>
+      </ul>
+    </section>
+
+    <footer>© <span id="year">2026</span> R Ghandiparsi</footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
